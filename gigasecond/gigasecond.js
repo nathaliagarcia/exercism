@@ -3,6 +3,5 @@
 // convenience to get you started writing code faster.
 //
 
-const GIGASECOND = Math.pow(10, 9);
-export const gigasecond = (date) =>
-  new Date(date.getTime() + GIGASECOND * 1000);
+const GIGA_MILLISECOND = Math.pow(10, 9) * 1000;
+export const gigasecond = (date) => new Date(date.getTime() + GIGA_MILLISECOND);
